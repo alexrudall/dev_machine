@@ -1,9 +1,8 @@
 # Ubuntu development machine
 
-### You have to copy, paste, and press enter on each line, sometimes it needs credentials.
-### TODO: Automate!
-
 ```
+# You have to copy, paste, and press enter on each line, sometimes it needs credentials.
+# TODO: Automate!
 sudo apt-get update
 sudo apt-get install docker
 sudo apt-get install docker-compose
