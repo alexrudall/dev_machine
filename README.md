@@ -23,6 +23,15 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 # Add ssh key to Github: https://github.com/settings/ssh/new
 
+# Store SSH key locally so don't have to retype it on every git pull/push
+# From https://www.linuxbabe.com/linux-server/setup-passwordless-ssh-login
+sudo apt install keychain
+code ~/.bash_profile
+# Append these 2 lines:
+/usr/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOSTNAME-sh
+# You'll need to enter the SSH password (via a normal terminal) on every systeme reboot.
+
 # Heroku.
 sudo snap install --classic heroku
 heroku login -i
