@@ -35,6 +35,9 @@ source $HOME/.keychain/$HOSTNAME-sh
 # Heroku.
 sudo snap install --classic heroku
 heroku login -i
+
+# CircleCI cli (to test CI locally)
+curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | bash
 ```
 
 # Help
