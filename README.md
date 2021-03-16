@@ -38,6 +38,8 @@ heroku login -i
 
 # CircleCI cli (to test CI locally)
 curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | bash
+# Generate API key from: https://app.circleci.com/settings/user/tokens
+circleci setup
 ```
 
 # Help
