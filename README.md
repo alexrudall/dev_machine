@@ -36,10 +36,13 @@ source $HOME/.keychain/$HOSTNAME-sh
 sudo snap install --classic heroku
 heroku login -i
 
-# CircleCI cli (to test CI locally)
+# CircleCI cli (to test CircleCI locally)
 curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | bash
 # Generate API key from: https://app.circleci.com/settings/user/tokens
 circleci setup
+
+# Test Github Actions locally.
+sudo snap install act
 ```
 
 # Help
